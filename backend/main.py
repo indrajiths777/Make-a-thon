@@ -12,6 +12,7 @@ from fastapi.responses import FileResponse
 
 from backend.config import COMPANY_NAME, STATIC_DIR
 from backend.db import init_db
+from backend.seed import seed_database
 from backend.routers import (
     auth,
     products,
@@ -59,6 +60,7 @@ app.include_router(dashboard.router)
 @app.on_event("startup")
 def on_startup():
     init_db()
+    seed_database(force=False)
 
 @app.get("/health", tags=["System Health"])
 def health_check():
