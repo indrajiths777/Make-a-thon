@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Test cache
+.pytest_cache/

@@ -1,0 +1,166 @@
+/* Brightloop Software - Custom Styles & Print Layouts */
+:root {
+    --brand-primary: #4f46e5;
+    --brand-primary-hover: #4338ca;
+    --brand-secondary: #0ea5e9;
+    --bg-main: #f8fafc;
+    --sidebar-bg: #1e293b;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Status Badges */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-active, .badge-paid, .badge-confirmed {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+}
+
+.badge-draft, .badge-quotation {
+    background-color: #fef9c3;
+    color: #854d0e;
+    border: 1px solid #fef08a;
+}
+
+.badge-paused {
+    background-color: #ffedd5;
+    color: #c2410c;
+    border: 1px solid #fed7aa;
+}
+
+.badge-closed, .badge-cancelled {
+    background-color: #f1f5f9;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+}
+
+.badge-overdue {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+/* Modal animations */
+.modal-overlay {
+    background-color: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(4px);
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Print Layout for Invoices & Quotations */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #printable-document, #printable-document * {
+        visibility: visible;
+    }
+    #printable-document {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        background: white !important;
+        color: black !important;
+    }
+    .no-print {
+        display: none !important;
+    }
+}
+
+
+/* Brightloop UI fixes - missing Tailwind utility classes */
+
+.bg-emerald-600 {
+    background-color: #059669;
+}
+
+.bg-emerald-700 {
+    background-color: #047857;
+}
+
+.bg-emerald-50 {
+    background-color: #ecfdf5;
+}
+
+.bg-emerald-100 {
+    background-color: #d1fae5;
+}
+
+.bg-slate-100 {
+    background-color: #f1f5f9;
+}
+
+.bg-slate-200 {
+    background-color: #e2e8f0;
+}
+
+.bg-rose-100 {
+    background-color: #ffe4e6;
+}
+
+.text-slate-700 {
+    color: #334155;
+}
+
+.text-slate-600 {
+    color: #475569;
+}
+
+.text-emerald-700 {
+    color: #047857;
+}
+
+.text-emerald-800 {
+    color: #065f46;
+}
+
+.text-rose-700 {
+    color: #be123c;
+}
+
+.hover\:bg-emerald-700:hover {
+    background-color: #047857;
+}
+
+.hover\:bg-emerald-100:hover {
+    background-color: #d1fae5;
+}
+
+.hover\:bg-slate-200:hover {
+    background-color: #e2e8f0;
+}
