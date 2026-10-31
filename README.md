@@ -1,5 +1,13 @@
 # Brightloop Software – Subscription Management System
 
+## 🚀 Live Demo
+
+**Live Application:** https://brightloop-subscription-management.onrender.com
+
+**Source Code:** https://github.com/indrajiths777/Make-a-thon
+
+**Tech Stack:** Python, FastAPI, SQLite, HTML, CSS, JavaScript
+
 [![Python Version](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)](https://fastapi.tiangolo.com/)
 [![Database](https://img.shields.io/badge/Database-SQLite%20WAL-003B57.svg)](https://www.sqlite.org/)
